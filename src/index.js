@@ -9,7 +9,8 @@ ReactDOM.render(
 <Router>
 <h1>Homework</h1>
 <ul>
-  <li><Link to="/app">Exercise1</Link></li>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/app" >Exercise1</Link></li>
 </ul>
 <Switch>
   <Route path="/app" component={App}></Route>
