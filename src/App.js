@@ -20,7 +20,7 @@ function App() {
       </p>
       <h2>Useful Links</h2>
       <ul>
-        <li>Set up Call with Instructor : <a href="https://calendly.com/wynisco/isa-information-session?month=2021-02" target="_blank">Here</a> or email sachin@wynisco.com</li>
+        <li>Set up Call with Instructor : <a href="https://calendly.com/wynisco/isa-information-session?month=2021-02" target="_blank" rel="noreferrer">Here</a> or email sachin@wynisco.com</li>
         <li>Apply for program : <a >Here </a></li>
         <li>Website : Here</li>
       </ul>
