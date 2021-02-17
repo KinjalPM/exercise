@@ -1,13 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
+import ReactDOM from 'react-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+<Router>
+<h1>Homework</h1>
+<ul>
+  <li><Link to="/app">Exercise1</Link></li>
+</ul>
+<Switch>
+  <Route path="/app" component={App}></Route>
+</Switch>
+</Router>,
   document.getElementById('root')
 );
 
