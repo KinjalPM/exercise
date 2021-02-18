@@ -1,30 +1,64 @@
 import './App.css';
-
+import React from 'react'
 const h1style = {
    margin: 0,
    textAlign: "centre"
 }
+
 const bodystyle ={
   margin: "20px"
 }
 function App() {
   return (
     <div style={bodystyle}>
-    <header>
-      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Boston_-_panoramio_%2823%29.jpg/576px-Boston_-_panoramio_%2823%29.jpg' alt="Boston skyline"/>
-     <br></br>
-     <img src='./boston.jpg'/>
-      <h1 style={h1style}><em>Curriculum </em></h1>            
-    </header>
-      <p>
-      This is how we plan to teach during our Bootcamp. We will deviate as deemed fit by the instructor whenever required.There will be several micro and mega projects we will be building along the way.
-      </p>
-      <h2>Useful Links</h2>
-      <ul>
-        <li>Set up Call with Instructor : <a href="https://calendly.com/wynisco/isa-information-session?month=2021-02" target="_blank" rel="noreferrer">Here</a> or email sachin@wynisco.com</li>
-        <li>Apply for program : <a >Here </a></li>
-        <li>Website : Here</li>
-      </ul>
+      <h1 style={h1style}><em>Exercise 1: </em></h1>  
+<br></br>
+     <form>
+      <label>FirstName: </label>
+      <input type="text" id="FName" placeholder="FName" maxLength="128" required></input>
+      <br></br>
+      <br></br>
+      <label>LastName: </label>
+      <input type="text" id="LName" placeholder="LName" maxLength="128" required></input>
+      <br></br>
+      <br></br>
+
+     <div id="gen"> 
+      <label>Gender: </label>
+      <br></br>
+      <input type="radio" id="male" value="male" />
+      <label for="male">Male</label><br></br>
+      <input type="radio" id="female"value="female" />
+      <label for="male">Female</label>
+      </div>
+
+      <br></br>
+      <br></br>
+      <label for="MasterDegree">Master Degree: </label>
+      <select name="MasterDegree" id="degree">
+        <option value="Computer">Computer</option>
+        <option value="Instrumentation">Instrumentation</option>
+        <option value="Arts">Arts</option>
+        <option value="ELectrical">ELectrical</option>
+      </select>
+      <br></br>
+      <br></br>
+      <label>Email Address: </label>
+      <input type="email" id="email" placeholder="email"></input>
+      <br></br>
+      <br></br>
+      <label>Resume: </label>
+      <input type="file" id="file" name="file" multiple></input>
+      <br></br>
+      <br></br>
+      <label>Date of Graduation: </label>
+      <input type="date" id="da" name="date"></input>
+      <br></br>
+      <br></br>
+      <input type="submit" value="Submit" onSubmit="showInput()"></input>
+    </form> 
+<br></br>
+<br></br>
     </div>
   );
 }

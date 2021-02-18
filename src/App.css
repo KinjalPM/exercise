@@ -28,6 +28,82 @@
   color: #61dafb;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.row :nth-child(even){
+  background-color: #dcdcdc;
+}
+.row :nth-child(odd){
+  background-color: #aaaaaa;
+}
+/* 
+.div1{
+  margin: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.div2{
+  margin: 10%;
+  padding: 15;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.div3{
+  margin: 2vw;
+  padding: 1%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.div4{
+  margin: 1em;
+  border: 1px solid black;
+  text-align: center;
+} */
+
+/* #gen{
+  outline: 1px solid red 
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +112,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 100%;
+  z-index: -1;
+} */
