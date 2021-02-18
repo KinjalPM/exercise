@@ -1,17 +1,10 @@
 import './App.css';
 import React from 'react'
-const h1style = {
-   margin: 0,
-   textAlign: "centre"
-}
 
-const bodystyle ={
-  margin: "20px"
-}
 function App() {
   return (
-    <div style={bodystyle}>
-      <h1 style={h1style}><em>Exercise 1: </em></h1>  
+    <div style={{ backgroundColor: 'white' , margin: '20px', textAlign: 'center'}} >
+      <h1 style={{margin: '20px', paddingTop:'20px'}}><em><u>Exercise 1: </u></em></h1>  
 <br></br>
      <form>
       <label>FirstName: </label>
