@@ -8,16 +8,22 @@ import ReactTooltip from 'react-tooltip';
 
 ReactDOM.render(
 <Router>
-<h1 data-tip="Learning">Homework</h1>
-<ReactTooltip />
-<ul>
-  <li><Link to="/">Home</Link></li>
-  <li><Link to="/app" >Exercise1</Link></li>
-  <li><a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer">Github</a></li>
-</ul>
-<Switch>
-  <Route path="/app" component={App}></Route>
-</Switch>
+  <div id="dstyle">
+  <h1 data-tip="Learning" id="h1style">Homework</h1>
+  <ReactTooltip />
+    <ul>
+        <li><Link to="/" id="ulstyle">Home</Link></li>
+        <br></br>
+        <li><Link to="/app" id="ulstyle">Exercise 1</Link></li>
+        <br></br>
+        <li><a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer" id="ulstyle">Github</a></li>
+    </ul>
+
+    <Switch>
+      <Route path="/app" component={App}></Route>
+    </Switch>
+
+</div>
 </Router>,
   document.getElementById('root')
 );
