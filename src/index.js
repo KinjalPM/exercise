@@ -13,6 +13,7 @@ ReactDOM.render(
 <ul>
   <li><Link to="/">Home</Link></li>
   <li><Link to="/app" >Exercise1</Link></li>
+  <li><a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer">Github</a></li>
 </ul>
 <Switch>
   <Route path="/app" component={App}></Route>
