@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 import ReactDOM from 'react-dom'
 import './index.css';
 import App from './App';
-import Exercise2 from './Exercise2'
+import Exercise3 from './Exercise3';
+import Exercise2 from './Exercise2';
 import reportWebVitals from './reportWebVitals';
 import ReactTooltip from 'react-tooltip';
 
@@ -19,11 +20,14 @@ ReactDOM.render(
         <br></br>
         <li><Link to="/exercise2" id="ulstyle">Exercise 2</Link></li>
         <br></br>
+        <li><Link to="/exercise3" id="ulstyle">Exercise 3</Link></li>
+        <br></br>
         <li><a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer" id="ulstyle">Github</a></li>
     </ul>
 
     <Switch>
       <Route path="/app" component={App}></Route>
+      <Route path="/exercise3" component={Exercise3}></Route>
       <Route path="/exercise2" component={Exercise2}></Route>
     </Switch>
 

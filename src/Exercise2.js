@@ -1,18 +1,19 @@
 import React from 'react';
-import './Exercise2.css';
+import './Exercise2.css'
 function Exercise2(){
+
     return(
-        <div class="dstyle">
+        <div style={{backgroundColor: 'white' , margin:'20px', padding:'20px'}}>
         <h1><em><u>Exercise 2: </u></em></h1>
-        <div class="container ">
-        <div class="div1">Header</div>
-        <div class="div2">Hero</div>
-        <div class="div3">Content</div>
-        <div class="div4">Sidebar</div>
-        <div class="div5">Footer</div>
+        <div class="container1">
+        <div id="div1">Header</div>
+        <div id="div2">Hero</div>
+        <div id="div3">Content</div>
+        <div id="div4">Sidebar</div>
+        <div id="div5">Footer</div>
         </div>
         </div>
-    );
+    )
 }
 
 export default Exercise2;
