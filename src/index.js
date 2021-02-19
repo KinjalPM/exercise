@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Exercise3 from './Exercise3';
 import Exercise2 from './Exercise2';
+import Exercise4 from './Exercise4';
 import reportWebVitals from './reportWebVitals';
 import ReactTooltip from 'react-tooltip';
 
@@ -13,22 +14,20 @@ ReactDOM.render(
   <div id="dstyle">
   <h1 data-tip="Learning" id="h1style"><u>Homework</u></h1>
   <ReactTooltip />
-    <ul>
-        <li><Link to="/" id="ulstyle">Home</Link></li>
-        <br></br>
-        <li><Link to="/app" id="ulstyle">Exercise 1</Link></li>
-        <br></br>
-        <li><Link to="/exercise2" id="ulstyle">Exercise 2</Link></li>
-        <br></br>
-        <li><Link to="/exercise3" id="ulstyle">Exercise 3</Link></li>
-        <br></br>
-        <li><a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer" id="ulstyle">Github</a></li>
-    </ul>
+    <div class="navbar">
+        <Link to="/" id="ulstyle">Home</Link>
+        <Link to="/app" id="ulstyle">Exercise 1</Link>
+        <Link to="/exercise2" id="ulstyle">Exercise 2</Link>
+        <Link to="/exercise3" id="ulstyle">Exercise 3</Link>
+        <Link to="/exercise4" id="ulstyle">Exercise 4</Link>
+        <a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer" id="ulstyle">Github</a>
+    </div>
 
     <Switch>
       <Route path="/app" component={App}></Route>
-      <Route path="/exercise3" component={Exercise3}></Route>
       <Route path="/exercise2" component={Exercise2}></Route>
+      <Route path="/exercise3" component={Exercise3}></Route>
+      <Route path="/exercise4" component={Exercise4}></Route>
     </Switch>
 
 </div>

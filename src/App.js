@@ -3,8 +3,8 @@ import React from 'react'
 
 function App() {
   return (
-    <div style={{ backgroundColor: 'white' , margin: '20px', textAlign: 'center'}} >
-      <h1 style={{margin: '20px', paddingTop:'20px'}}><em><u>Exercise 1: </u></em></h1>  
+    <div style={{ backgroundColor: 'white' , margin: '20px', padding: '20px'}} >
+      <h1 ><em><u>Exercise 1: </u></em></h1>  
 <br></br>
      <form>
       <label>FirstName: </label>

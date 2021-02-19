@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +14,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -62,31 +62,3 @@
   visibility: visible;
   opacity: 1;
 }
-
-/* .row :nth-child(even){
-  background-color: #dcdcdc;
-}
-.row :nth-child(odd){
-  background-color: #aaaaaa;
-} */
- 
-/* #gen{
-  outline: 1px solid red 
-} */
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: 100%;
-  z-index: -1;
-} */
