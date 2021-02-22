@@ -20,7 +20,13 @@ function Exercise5(){
         <div class="grid-container1">
         <div class="grid-item" style={{ color: 'white'}}><button>STOP</button></div>
         <div class="grid-item" style={{ color: 'white'}}><button>RESET</button></div>
-        <div class="grid-item"><label style={{fontSize:'10px'}}>Speed</label></div>
+        <div class="grid-item1">
+            <label style={{fontSize:'10px'}}>Speed</label>
+            <br></br>
+            <button style={{backgroundColor:' #f50057'}}>0.5PX</button>
+            <button style={{backgroundColor:' #f50057'}}>5PX</button>
+            <button style={{backgroundColor:' #f50057'}}>10PX</button>
+        </div>
         </div>
 
         {/* subheading */}
