@@ -22,7 +22,7 @@ ReactDOM.render(
         <Link to="/exercise3" id="ulstyle">Exercise 3</Link>
         <Link to="/exercise4" id="ulstyle">Exercise 4</Link>
         <Link to="/exercise5" id="ulstyle">Exercise 5</Link>
-        <a href="https://github.com/KinjalPM/exercise" target="_blank" rel="noreferrer" id="ulstyle">Github</a>
+        <a href="https://github.com/KinjalPM/exercise" id="ulstyle">Github</a>
     </div>
 
     <Switch>

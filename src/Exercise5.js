@@ -4,18 +4,16 @@ import './ex-5.css';
 function Exercise5(){
    return( 
 <>  
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-</head>
+
 <div class='body'>
 {/* flex */}
 <div class="c1">
         {/* heading */}
-       <div class='d1'style={{textAlign:'center'}}>
+       <div class='d1'>
         <strong>Current Status: </strong>
           Started...
         </div>
-
+</div>
         {/* subheading */}
         <div class="grid-container1">
         <div class="grid-item" style={{ color: 'white'}}><button>STOP</button></div>
@@ -33,67 +31,67 @@ function Exercise5(){
         <h2 style={{textAlign:'center'}}>Events</h2>
 
         {/* displaying event details */}
-<div class="outerEventBox">
-    <div class="innerEventBox">
-                <div class="wrapper">
-            <div class="w2">
-                <label>Replay Clock</label>
-                <p>09:30:42.62</p>
-            </div>
-            <div class="w2">
-                <label>Event</label>
-                <p>678</p>
-            </div>
-            <div class="w2">
-                <label>Name</label>
-                <p>Bid</p>
-            </div>
-            <div class="w2">
-                <label>Exchange 1</label>
-                <p>X</p>
-            </div>
-            <div class="w2">
-                <label>Price 1</label>
-                <p>142.72</p>
-            </div>
-            <div class="w2">
-                <label>Share 1</label>
-                <p>100</p>
-            </div>
-            <div class="w2">
-                <label>Exchange 1</label>
-                <p>X</p>
-            </div>
-            <div class="w2">
-                <label>Price 2</label>
-                <p></p>
-            </div>
-            <div class="w2">
-                <label>Share 2</label>
-                <p></p>
-            </div>
-            <div class="w2">
-                <label>Exchange 2</label>
-                <p></p>
-            </div>
-            </div>
-    </div>
-</div>
+<div className="events-container">
+                    <div className="cardContainer">
+                        <div className="cardtitle">Replay Clock</div>
+                        <p class="cardbody" >09:30:42.62</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Event</div>
+                        <p class="cardbody">678</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Name</div>
+                        <p class="cardbody">Bid</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Exchange 1</div>
+                        <p class="cardbody">X</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Price 1</div>
+                        <p class="cardbody">142.72</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Share 1</div>
+                        <p class="cardbody">100</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Exchange 1</div>
+                        <p class="cardbody">X</p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Price 2</div>
+                        <p class="cardbody"></p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Share 2</div>
+                        <p class="cardbody"></p>
+                    </div>
+                    <div className="cardContainer">
+                        <div className="cardtitle">Exchange 2</div>
+                        <p class="cardbody"></p>
+                    </div>
+                </div>
 {/* order */}
 <h2 style={{textAlign:'center', marginBottom:'20px'}}>Order Book</h2>
 
 {/* Table */}
-<div className="tablestyle">
-    <div className='row'>
-        <div className='col1' style={{float:'left'}}>
+{/* <div className="tablestyle"> */}
+<div className="ask-bid-container">
+        <div className="table-everything1">
         <table>
             <caption>Bids</caption>
-            <tr>
+         <thead>
+             <tr>
                 <th class="colname">Age</th>
                 <th class="colname">Exchange</th>
                 <th class="colname">Shares</th>
                 <th class="colname">Price</th>
-            </tr>
+                </tr>
+                </thead>
+
+        <tbody>
             <tr>
                 <th>1200</th>
                 <th>X</th>
@@ -178,17 +176,22 @@ function Exercise5(){
                 <th>100</th>
                 <th>136.63</th>
             </tr>
+            </tbody>
         </table>
         </div>
-        <div className='col2' style={{float:'right'}}>
+
+        <div className="table-everything2">
         <table>
         <caption>Asks</caption>
-        <tr>
+        <thead>
+            <tr>
             <th class="colname">Price</th>
             <th class="colname">Shares</th>
             <th class="colname">Exchange</th>
             <th class="colname">Age</th>
-        </tr>
+            </tr>
+            </thead>
+            <tbody>
         <tr>
             <th>142.84</th>
             <th>100</th>
@@ -273,14 +276,23 @@ function Exercise5(){
             <th>C</th>
             <th>1200</th>
         </tr>
+        </tbody>
         </table>
         </div>
+
+
         </div>
    </div>
-</div>
-</div>
+
     </>
    )
 }
 
 export default Exercise5;
+
+ 
+
+  
+       
+  
+            

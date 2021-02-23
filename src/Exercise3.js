@@ -14,6 +14,11 @@ function Exercise3(){
         <div class="div5">Footer</div>
         </div>
         </div>
+
+
+
+
+
     );
 }
 

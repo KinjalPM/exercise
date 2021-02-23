@@ -3,15 +3,10 @@
     background-color: white;
 }
 
-
-
 .d1{
-   justify-content: center;
    padding-top: 20px;
    margin-top: 10px;
 }
-
-
 
 .grid-item {
     padding-top: 20px;
@@ -36,8 +31,8 @@ button{
 
     .c1{
         display: flex;
-        flex-direction: column;
         text-align: center;
+        justify-content: center
         }
 
         .grid-container1{
@@ -48,103 +43,165 @@ button{
           padding: 20px;
         }
     
-      @media (min-width: 650px) {
-            .grid-container1{
-                display: flex;
-                justify-content: space-around;
-              flex-direction: row;
-            }
-            .wrapper{
-              display:flex;
-              flex-direction:column;
-            }
-            .w2{
-              display: flex;
-              flex-direction: column;
-            }
+.events-container {
+  background-color: #faecdd;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+}
 
-         
-            
-    }
-    
 
-      .outerEventBox{
-        background-color: #faebd7;
-        padding-bottom: 5px;
-        padding-left: 20px;
-        padding-right: 20px; 
-        margin-left: 100px;
-        margin-right: 100px;
-        height:150px;
-        border: 1px solid grey;
-    }
+.cardContainer, .cardContainerError {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.0625);
+  display: grid;
+  padding: 10px;
+}
 
-    .innerEventBox{
-        padding-top: 20x;
-            margin-bottom: 10px;
-            margin-left: 0px;
-            margin-right: 10px;
-            margin-top: 10px;
-            border: 2px;
-            border-style: outset;
-            background-color: white;
-            width: 100%;
-            
-            }
-        
-      .wrapper {
-                display:flex;
-                flex-direction:row;
-                grid-template-columns: repeat(10, 1fr);
-                height: 100px;
-                margin: 5px;
-              }
-        
-      .wrapper label{
-                font-weight: bold;
-              }
-        
-      .w2{
-       
-        width: 15%;
-        border: 1px solid rgba(0,0,0,.0625);
-      }
+.cardContainer {
+  background-color: white;
+  border: 2px;
+  border-style: outset;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+      "cardtitle cardtitle cardtitle"
+      "cardbody cardbody cardbody"
+      "cardaction cardaction cardaction";
+      flex-grow: 1;
+}
 
-    
-      
-      .col1{
-        width: 40%;
-        padding-bottom: 10px;
-        margin-left: 100px;
-        margin-right: 10px;
-        float:'left'
-      }
+.cardbody, .cardtitle {
+  justify-self: center;
+  align-items: center;
+}
+.cardtitle {
+  grid-area: cardtitle;
+  font-weight: bold;
+}
+.cardbody {
+  grid-area: cardbody;
 
-      .col2{
-        width: 40%;
-        padding-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 100px;
-        float: 'right';
-      }
+  font-size: 20px;
+}
+.cardbody, .cardtitle {
+  justify-self: center;
+  align-items: center;
+}
 
-    table {
-        /* border-collapse: collapse; */
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid #ddd;
-      }
-      
-      th, td {
-        color: rgba(0, 0, 0, 0.87);
-        text-align: left;
-        padding: 16px;
-        border-bottom: 1px solid rgba(224, 224, 224, 1);
-      }
+.cardaction {
+  grid-area: cardaction;
+  justify-self: center;
+  align-items: center;
+}
 
-    .colname{
-        font-weight: 500;
-    }
-      caption{
-          font-weight: bold;
-      }
+
+
+
+.ask-bid-container{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.table-everything1{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  display: block;
+  margin: 30px;
+  width: 40%;
+}
+
+.table-everything2{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  display: block;
+ margin: 30px;
+width: 40%;
+} 
+
+table{
+  width: 100%;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-color: grey;
+}
+
+thead{
+  display: table-header-group;
+  vertical-align: middle;
+}
+
+tr{
+  display: table-row;
+  outline: 0;
+  vertical-align: middle;
+}
+
+th{
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5rem;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  vertical-align: inherit;
+}
+
+caption{
+  font-weight: bold;
+}
+
+tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr:nth-child(even){
+  background-color: #f0e8df;
+}
+
+td{
+  font-weight: 600;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  vertical-align: inherit;
+}
+
+
+@media screen and (min-width: 600px){
+  .grid-container1{
+      display: flex;
+      justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .events-container {
+    flex-direction: row;
+}
+.ask-bid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+  
+}
+
+
+
+
+
+
