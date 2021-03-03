@@ -18,7 +18,6 @@
     "react-scripts": "4.0.2",
     "react-tooltip": "^4.2.14",
     "reactstrap": "^8.9.0",
-    "toast": "^0.3.43",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
