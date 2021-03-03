@@ -10,7 +10,7 @@ import Exercise5 from './Exercise5';
 import Lottery from './Lottery';
 import reportWebVitals from './reportWebVitals';
 import ReactTooltip from 'react-tooltip';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
 <Router>
   <div id="dstyle">
