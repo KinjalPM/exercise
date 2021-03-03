@@ -38,13 +38,15 @@ setTeam(teamed)
                 <h1><em><u>Lottery :</u></em></h1>
                 <div className="lottery-container"></div>
                 <button onClick={()=>handleLottery()} color="primary">Start Lottery</button>{' '}
-     <div>
+     <div className="displayLottery">
     <h2>{avaliableTeamName[0]}</h2>
-    <p>
-        {team.slice(0,2).join(" , ")}
-    </p>
+    <p>{team.slice(0,2).join(" , ")}</p>
+    </div>
+    <div> 
     <h2>{avaliableTeamName[1]}</h2>
     <p>{team.slice(2,4).join(" , ")}</p>
+    </div>
+    <div>
     <h2>{avaliableTeamName[2]}</h2>
     <p>{team.slice(4).join(" , ")}</p>
     </div>
