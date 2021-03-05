@@ -8,10 +8,12 @@ import Exercise2 from './Exercise2';
 import Exercise4 from './Exercise4';
 import Exercise5 from './Exercise5';
 import Lottery from './Lottery';
+import Router1 from './Router';
 import reportWebVitals from './reportWebVitals';
 import ReactTooltip from 'react-tooltip';
 import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
+  <div id="c1">
 <Router>
   <div id="dstyle">
   <h1 data-tip="Learning" id="h1style"><u>Homework</u></h1>
@@ -24,6 +26,7 @@ ReactDOM.render(
         <Link to="/exercise4" id="ulstyle">Exercise 4</Link>
         <Link to="/exercise5" id="ulstyle">Exercise 5</Link>
         <Link to="/lottery" id="ulstyle">Lottery</Link>
+        <Link to="/router1" id="ulstyle">StudentBE</Link>
         <a href="https://github.com/KinjalPM/exercise" id="ulstyle">Github</a>
     </div>
 
@@ -34,10 +37,12 @@ ReactDOM.render(
       <Route path="/exercise4" component={Exercise4}></Route>
       <Route path="/exercise5" component={Exercise5}></Route>
       <Route path="/lottery" component={Lottery}></Route>
+      <Route path="/router1" component={Router1}></Route>
     </Switch>
 
 </div>
-</Router>,
+</Router>
+</div>,
   document.getElementById('root')
 );
 

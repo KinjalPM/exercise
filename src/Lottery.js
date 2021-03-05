@@ -13,7 +13,7 @@ const avaliableName = ["Venkat",
 
 function Lottery(){
     const [team,setTeam] =useState([]);
-    const[teamName,setTeamName] = useState('');
+    // const[teamName,setTeamName] = useState('');
 
 
 function handleLottery() {

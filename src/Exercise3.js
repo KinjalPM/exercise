@@ -4,7 +4,7 @@ function Exercise3(){
     return(
         <div class="dstyle">
         <h1><em><u>Exercise 3: </u></em></h1>
-        <div class="container ">
+        <div class="container5 ">
         <div class="div1">Header</div>
         <div class="div2">Hero</div>
         <div class="box">

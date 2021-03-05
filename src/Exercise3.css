@@ -46,8 +46,8 @@
     
   }
 
-  .container{
-    width: 400px;
+  .container5{
+    width: 430px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -68,7 +68,7 @@
           display: flex;
           flex-direction: column;
         }
-        .container{
+        .container5{
           border: 5px solid black;
         }
 
