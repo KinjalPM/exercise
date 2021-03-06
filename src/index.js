@@ -11,7 +11,11 @@ import Lottery from './Lottery';
 import Router1 from './Router';
 import reportWebVitals from './reportWebVitals';
 import ReactTooltip from 'react-tooltip';
+import Carousal from './Carousal';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 ReactDOM.render(
   <div id="c1">
 <Router>
@@ -27,6 +31,7 @@ ReactDOM.render(
         <Link to="/exercise5" id="ulstyle">Exercise 5</Link>
         <Link to="/lottery" id="ulstyle">Lottery</Link>
         <Link to="/router1" id="ulstyle">StudentBE</Link>
+        <Link to="/carousal" id="ulstyle">Carousal</Link>
         <a href="https://github.com/KinjalPM/exercise" id="ulstyle">Github</a>
     </div>
 
@@ -38,6 +43,7 @@ ReactDOM.render(
       <Route path="/exercise5" component={Exercise5}></Route>
       <Route path="/lottery" component={Lottery}></Route>
       <Route path="/router1" component={Router1}></Route>
+      <Route path="/carousal" component={Carousal}></Route>
     </Switch>
 
 </div>
